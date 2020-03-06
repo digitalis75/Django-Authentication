@@ -25,7 +25,9 @@
     </div>
     {% endif %}
     <form>
+        {% csrf_token %}
         {{ login_form }}
+        <button type= "submit">Login</button>
     </form>
 </body>
 </html>
